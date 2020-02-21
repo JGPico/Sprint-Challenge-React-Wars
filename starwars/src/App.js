@@ -19,3 +19,8 @@ const App = () => {
 }
 
 export default App;
+
+// Things I'm struggling with . . .
+// 1. Linking image source to correct folder
+// 2. Get request for Planet or Vehicle from within the People API
+// 3. styling reactstrap cards to be uniform size

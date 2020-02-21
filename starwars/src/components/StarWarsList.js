@@ -10,6 +10,7 @@ export default function StarWarsList () {
         axios.get('https://swapi.co/api/people/').then(response => {
             console.log("This is the star wars people api", response);
             setStarWarsInfo(response.data.results);
+
         }).catch(error => {
             console.log('This isnt going to work', error);
         })
@@ -21,7 +22,9 @@ export default function StarWarsList () {
             {starWarsInfo.map((element, index) => (
                 <StarWarsCard key = {index}
                 name = {element.name}
-                gender = {element.gender}/>
+                gender = {element.gender}
+                homeworld = {element.homeworld}
+                />
             ))}
             </Row>
         </Container>
